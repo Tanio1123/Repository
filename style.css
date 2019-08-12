@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    font-family: 'Noto Serif JP', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 210px;
+    margin-top: 10px;
+
+}
+
+.main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    margin-top: 44px;
+
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000, 3px 3px 3px #000;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.home-content p {
+    font-size: 24px;
+    margin: 0 0 42px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #fff, 0 0 0.2em #000;
+    color: white;
+    font: 1.5em Georgia, serif;
+}
+
+.page-title {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000, 3px 3px 3px #000;
+}
+
+.button {
+    font-size: 20px;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 32px;
+}
+
+.button:hover {
+    background: red;
+}
+
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.big-bg-a {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url(img/dragonball_header.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-attachment: fixed;
+}
+
+.about {
+    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #000;
+    color: #fff;
+    font: 1.5em Georgia, serif;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.about p {
+    text-align: left;
+}
+
+#home-character {
+    background-image: url(img/lp-uniqueHero_dbz_1809.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-attachment: fixed;
+}
+
+#character {
+    text-align: center;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #000;
+    color: #fff;
+    font: 1.5em Georgia, serif;
+}
+
+.hero {
+    display: grid;
+    grid-gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+
+}
+
+.villan {
+    display: grid;
+    grid-gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.item {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #eee;
+    border: solid 1px #000;
+}
+
+.item a {
+    color: #fff;
+}
+
+
+.chara-img {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+footer {
+    background-color: #333;
+    color: #f6f5f5;
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #f6f5f5;
+}
+
+/*contact*/
+
+#contact {
+    background-image: url(img/zenoba-su.png);
+    min-height: 100vh;
+}
+
+
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #fff;
+    text-shadow: 2px 2px 2px #432, 3px 3px 3px #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+
+}
+
+.wrapper-login {
+    text-align: center;
+}
+
+/*user*/
+#user {
+    background-image: url(img/thumb-1920-656026.jpg);
+    min-height: 100vh;
+}
+
+#login {
+    background-image: url(img/81ZEISuiPuL._CR140,580,1100,1100_.jpg);
+    min-height: 100vh;
+}
+
+
+
+.help-block {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*エラー時*/
+.has-error input,
+.has-error textarea {
+    border: 1px solid #ff4d4b;
+}
+
+.has-error .help-block,
+.has-error {
+    color: #ff4d4b;
+}
+
+/*サクセス時*/
+.has-success input,
+.has-success textarea {
+    border: 1px solid #2fb4ce;
+}
+
+.has-success .help-block,
+.has-success label {
+    color: #2fb4ce;
+}
+
+.err_msg {
+    color: #ff4d4b;
+}
