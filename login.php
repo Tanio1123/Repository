@@ -53,20 +53,20 @@ if(!empty($_POST)){
                 $options = array(
 
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                    // デフォルトフェッチモードを連想配列形式に設定
+                    
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                    // バッファードクエリを使う(一度に結果セットをすべて取得し、サーバー負荷を軽減)
-                    // SELECTで得た結果に対してもrowCountメソッドを使えるようにする
+                    
+                 
                     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
                 );
 
-                // PDOオブジェクト生成（DBへ接続）
+                
                 $dbh = new PDO($dsn, $user, $password, $options);
 
-                //SQL文（クエリー作成）
+                
                 $stmt = $dbh->prepare('SELECT * FROM users WHERE email = :email AND pass = :pass');
 
-                //プレースホルダに値をセットし、SQL文を実行
+                
                 $stmt->execute(array(':email' => $email, ':pass' => $pass));
 
                 $result = 0;
@@ -75,13 +75,13 @@ if(!empty($_POST)){
 
                 if(!empty($result)){
 
-                    //SESSION（セッション）を使うにsession_start()を呼び出す
+                    
                     session_start();
 
-                    //SESSION['login']に値を代入
+                    
                     $_SESSION['login'] = true;
 
-                    //マイページへ遷移
+                   
                     header("Location:mypage.php");
                 }
                 
