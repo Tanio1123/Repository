@@ -4,7 +4,7 @@ ini_set('display_errors','On'); //画面にエラーを表示させるか
 
 session_start();
 
-//ログインしてなければ、login画面へ戻す
+
 if(empty($_SESSION['login'])) header("Location:login.php");
 
 ?>
